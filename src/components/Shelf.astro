@@ -1,0 +1,33 @@
+---
+const {album, artist } = Astro.props;
+---
+
+<section>
+<h1>Popular album</h1>
+<a href="#">Show all</a>
+<ul>
+    <li>
+     <img src="../../public/album1.jpeg" alt="Album1">
+    <h4>SkyLL</h4>
+    <p>Lamin</p>
+    </li>
+     <li>
+     <img src="../../public/album2.jpeg" alt="Album2">
+    <h4>FOMO 88.8 FM</h4>
+    <p>KESI</p>
+    </li>
+     <li>
+     <img src="../../public/album3.jpeg" alt="Album3">
+    <h4>KENNY</h4>
+    <p>Benny Jamz, Gilli</p>
+    </li>
+</ul>
+</section>
+
+<style>
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 5rem;
+    }
+</style>

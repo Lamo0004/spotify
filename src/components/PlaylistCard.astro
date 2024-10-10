@@ -1,0 +1,15 @@
+---
+const {artist, type } = Astro.props;
+---
+
+<article>
+    <slot />
+    <h4>{artist}</h4>
+    <p>{type}</p>
+</article>
+
+<style>
+article {
+    width: 10rem;
+}
+</style>

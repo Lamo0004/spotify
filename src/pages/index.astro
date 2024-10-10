@@ -1,5 +1,11 @@
 ---
-
+import "../styles/global.css"
+import Button from "../components/Button.astro"
+import Navigation from "../components/Navigation.astro"
+import Footer from "../components/Footer.astro"
+import Sidebar from "../components/Sidebar.astro"
+import PlaylistCard from "../components/PlaylistCard.astro"
+import Shelf from "../components/Shelf.astro"
 ---
 
 <html lang="en">
@@ -11,6 +17,27 @@
 		<title>Spotify</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header>
+			<Navigation />
+		</header>
+		<header>
+				<Sidebar />
+		</header>
+		<main>
+			<h1>Popular artist</h1>
+			<a href="#">Show all</a>
+			<div class="PlaylistGrid">
+			<PlaylistCard artist="Tobias Rahim" type="Artist"> <img src="../../public/rahim.jpeg" alt="Tobias Rahim"> </PlaylistCard>
+			<PlaylistCard artist="Lamin" type="Artist"> <img src="../../public/lamin.jpg" alt="Lamin"> </PlaylistCard>
+			<PlaylistCard artist="The Weekend" type="Artist"> <img src="../../public/the_weekend.jpg" alt="The Weekend"> </PlaylistCard>
+			</div>
+			<Shelf/>
+
+		<Button variant="primary" size="medium">BUTTON</Button>
+		<Button variant="secondary" size="small">BUTTON</Button>
+		</main>
+		<footer>
+			<Footer />
+		</footer>
 	</body>
 </html>
